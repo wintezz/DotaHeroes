@@ -1,10 +1,9 @@
-package com.alexpetrov.dotaheroes
+package com.alexpetrov.dotaheroes.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import coil.load
-import com.alexpetrov.dotaheroes.MainActivity
-import com.alexpetrov.dotaheroes.MainActivity.Companion.heroInfo
+import com.alexpetrov.dotaheroes.presentation.MainActivity.Companion.heroInfo
 import com.alexpetrov.dotaheroes.databinding.ActivitySecondBinding
 
 class SecondActivity : AppCompatActivity() {
@@ -37,10 +36,5 @@ class SecondActivity : AppCompatActivity() {
             "int" -> "Intelligence"
             else -> {"It's fantastic"}
         }
-        // Меня студия заебала
-        // По всякой дичи дрочит
-        // Кстати котов относительно прияняли
-        // да оно
-
     }
 }

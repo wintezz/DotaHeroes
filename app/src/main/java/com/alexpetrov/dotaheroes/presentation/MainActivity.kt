@@ -1,10 +1,12 @@
-package com.alexpetrov.dotaheroes
+package com.alexpetrov.dotaheroes.presentation
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.alexpetrov.dotaheroes.data.HeroModel
 import com.alexpetrov.dotaheroes.databinding.ActivityMainBinding
+import com.alexpetrov.dotaheroes.domain.Listener
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
@@ -21,10 +23,12 @@ class MainActivity : AppCompatActivity(), Listener {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         getHeroInfo()
         while (heroInfo.isEmpty()) {
             continue
         }
+
         initRecycler()
     }
 

@@ -1,10 +1,13 @@
-package com.alexpetrov.dotaheroes
+package com.alexpetrov.dotaheroes.presentation
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.alexpetrov.dotaheroes.data.HeroModel
+import com.alexpetrov.dotaheroes.domain.Listener
+import com.alexpetrov.dotaheroes.R
 import com.alexpetrov.dotaheroes.databinding.HeroItemBinding
 
 class HeroAdapter(
